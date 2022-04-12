@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<style>
+table, th, td{
+border: 1px solid black
+}
+.campo{
+display:grid;
+padding-top:10px;
+}
+</style>
+<body>
+
+<h2>Exercicio 1</h2>
+<table>
+<th scope="row" rowspan="7">Alunos</th>
+<tr>
+<th>Nome</th>
+<th>Idade</th>
+<th>Curso</th>
+<th>Semestre</th>
+</tr>
+<tr>
+<td>Pedro</td>
+<td>18</td>
+<td>ADS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Henrique</td>
+<td>19</td>
+<td>ADS</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Gustavo</td>
+<td>20</td>
+<td>ELO</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Camille</td>
+<td>18</td>
+<td colspan="2">BIO - Único</td>
+</tr>
+</table>
+
+<h2>Exercicio 2</h2>
+<h3>Cadastro</h3>
+<div class="row">
+	<div class="campo">
+		<div>
+		<label>Nome: </label><br/>
+		<input type="text" placeholder="Nome"/>
+		</div>
+	</div>
+	<div class="campo">
+		<label>Idade: </label>
+		<input type="number" placeholder="Idade"/>
+	</div>
+	<div class="campo">
+		<label>Interesse: </label>
+		<div>
+		<input type="radio" name="interesse">Jogos</input>
+		<input type="radio" name="interesse">Filmes</input>
+		<input type="radio" name="interesse">Música</input>
+		</div>
+	</div>
+	<div class="campo">
+		<div>
+		Enviar informações por E-mail?
+		<input type="checkbox">
+		</div>
+	</div>
+	<div class="campo">
+		<div>
+		Período<br/>
+			<select name="Horários">
+				<option value="0" selected="true">Selecione</option>
+				<option value="M">Matutino</option>
+				<option value="V">Vespertino</option>
+				<option value="N">Noturno</option>
+			</select>
+		</div>
+	</div>
+	<div class="campo">
+		<div>
+			<label>Cor favorita: </label></br>
+			<input type="text" placeholder="Cor" list="cores"/>
+		</div>
+		<datalist id="cores">
+			<option value="az">Azul</option>
+			<option value="am">Amarelo</option>
+			<option value="vm">Vermelho</option>
+			<option value="vd">Verde</option>
+			<option value="lr">Laranja</option>
+			<option value="rs">Rosa</option>
+			<option value="rx">Roxo</option>
+			<option value="pr">Preto</option>
+			<option value="br">Branco</option>
+			<option value="cz">Cinza</option>
+			<option value="mm">Marrom</option>
+		</datalist>
+	</div>
+	<div class="campo">
+	<div>
+		<label>Foto de Perfil: </label><br/>	
+		<input type="file"/>
+	</div>
+	</div><br/>
+	<div class="campo">
+	<div>
+		<input type="button" value="Enviar"/>
+	</div>
+	</div>
+</div>
+
+<h2>Exercício 3</h3>
+<table>
+<tr>
+<th scope="col" rowspan="20">2010</th>
+</tr>
+<tr>
+<th scope="row" colspan="7">Janeiro</th>
+</tr>
+<tr>
+<th>D</th>
+<th>S</th>
+<th>T</th>
+<th>Q</th>
+<th>Q</th>
+<th>S</th>
+<th>S</th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>1</th>
+<th>2</th>
+</tr>
+<tr>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+</tr>
+<tr>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+</tr>
+<tr>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+<th>22</th>
+<th>23</th>
+</tr>
+<tr>
+<th>24</th>
+<th>25</th>
+<th>26</th>
+<th>27</th>
+<th>28</th>
+<th>29</th>
+<th>30</th>
+</tr>
+<tr>
+<th>31</th>
+</tr>
+</table>
+</body>
