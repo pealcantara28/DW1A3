@@ -1,0 +1,64 @@
+<h3>Exercício 1</h3>
+<h4>Calculadora de Múltiplos</h4>
+<div class="row">
+    <div class="col-md-3">
+        <label>Valor 1</label>
+        <input type="number" id="valor1" />
+    </div>
+    <div class="col-md-1">
+        <b>x</b>
+    </div>
+    <div class="col-md-3">
+        <label>Valor 2</label>
+        <input type="number" id="valor2" />
+    </div>
+    <div class="col-md-1">
+        <b>=</b>
+    </div>
+    <div class="col-md-3">
+        <label>Resultado</label>
+        <input type="number" id="resultado" disabled/>
+    </div>
+    <div class="col-md-1">
+        <input type="button" onclick="multiplicar()" value="Total" />
+    </div>
+</div>
+<h3>Exercício 2</h3>
+<h4>Calculadora de Fatoriais</h4>
+<div class="row">
+    <div class="col-md-3">
+        <label>Número a Fatorar</label>
+        <input type="number" id="numero" />
+    </div>
+    <div class="col-md-3">
+        <label>Resultado</label>
+        <input type="number" id="fatorial" disabled/>
+    </div>
+    <div class="col-md-1">
+        <input type="button" onclick="fatorar()" value="Total" />
+    </div>
+</div>
+<script>
+    function multiplicar() {
+        let v1 = document.getElementById("valor1").value
+        let v2 = document.getElementById("valor2").value
+
+        document.getElementById("resultado").value = v1 * v2;
+    }
+    function fatorar() {
+        let n1 = document.getElementById("numero").value
+
+        document.getElementById("fatorial").value = factorial(n1)
+    }
+    function factorial(n) {
+        let answer = 1;
+        if (n == 0 || n == 1) {
+            return answer;
+        } else {
+            for (var i = n; i >= 1; i--) {
+                answer = answer * i;
+            }
+            return answer;
+        }
+    }
+</script>
