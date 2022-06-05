@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Login.css"/>
+    <body>
+        <div class="main">
+            <div class="menu-box">
+                <div class="login-form">
+                    <div class="logo">
+                        <img src="https://www.novaconcursos.com.br/portal/wp-content/uploads/2015/12/IFSP-logao.jpg" width="70%"></img>
+                    </div>
+                    <div class="login input">
+                        <label for="user">Usuário:</label>
+                        <input type="text" id="user" class="field" placeholder="Usuário"/>
+                    </div>
+                    <div class="password input">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" class="field" placeholder="Senha"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" class="button" onclick="Entrar()"/>
+                    </div>  
+                    <div>
+                        <a class="dialog">Novo aqui? <a href="../Teste/Cadastro.html">Cadastre-se</a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="Login.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Conferir.css"/>
+    <body>
+        <div class="main">
+            <div class="menu-box">
+                <div class="login-form">
+                    <h1 style="text-align:center">Conferir Notas</h1>
+                    <div class="password input">
+                        <label for="password">Prontuário:</label>
+                        <input type="text" id="matricula" class="field" placeholder="SP0000000"/>
+                    </div>
+                    <div class="login input">
+                        <label for="user">Nome Completo:</label>
+                        <input type="text" id="nome" class="field" placeholder="Nome" disabled/>
+                    </div>
+                    <div class="password input">
+                        <label for="password">Nota:</label>
+                        <input type="number" id="nota" class="field" placeholder="0" disabled/>
+                    </div>
+                    <div>
+                        <input type="button" value="Buscar" class="button" onclick="BuscarNota()"/>
+                    </div>  
+                    <div>
+                        <input type="submit" value="Voltar" class="buttonRed" onclick="Voltar()"/>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="Conferir.js"></script>
+    </body>
+    
+</html>
