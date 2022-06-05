@@ -1,0 +1,90 @@
+================AULA08 EX 1 E 2======================
+
+<!DOCTYPE html>
+<head>
+<title>Aula08</title>
+<h4>Este título é o primeiro, portanto não é adjacente a nada</h4>
+<meta charset="UTF-8"/>
+</head>
+<style>
+body{
+display:grid
+}
+</style>
+<body>
+<div>
+	<p><h4>Paragrafo irmão adjacente a um H4</h4></p>
+	<p>Este paragrafo é irmão adjacente a outro P e fica azul</p>
+	<p>Este também</p>
+	<h4>Título irmão adjacente a um P e fica vermelho</h4>
+	<p>Este é um paragrafo irmão adjacente a um H4</p>
+</div>
+<p>Este parágrafo esta fora da DIV, portanto não é irmão dos acima</p>
+<h4>Título fora da DIV, mas adjacente a um P e fica vermelho</h4>
+<h4>Título fora da DIV, mas adjacente a outra H4</h4>
+<p>
+	<a class="stl1" href="">Muda de cor </a><hr/>
+	<a class="stl2" href="">Muda o tamanho das letras</a><hr/>
+	<a class="stl3" href="">Muda a cor de fundo </a><hr/>
+	<a class="stl4" href="">Muda o tipo de letra </a><hr/>
+	<a class="stl5" href="">Muda a borda </a>
+</p>
+</body>
+
+=========================AULA08 EX 03=========================
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>K19 - Seletores - 1</title>
+	<link rel="stylesheet" type="text/css" href="seletores-basicos.css">
+</head>
+	<body>
+		<div id="conteudo">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<ul>
+				<li>item 1</li>
+				<li class = "cancelado">Item 2</li>
+				<li>
+					item 3
+					<ul>
+						<li>subitem 1</li>
+						<li>subitem 2</li>
+					</ul>
+				</li>
+				<li class="cancelado">Item 4</li>
+				</ul>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+	</body>
+</html>
+
+=============================AULA08 EX4===============================
+
+
+[title] {
+	border: 4px solid red;
+}
+[title ='Página 3'] {
+	color: green;
+}
+[title -= 'K19']{
+	padding: 10px;
+	background: yellow;
+}
+[title ^='Link']{
+	margin-right: 30px;
+}
+[href $='link']{
+	outline: 4px solid blue;
+}
+[src *= 'large']{
+	border: 4px solid green;
+}
+[href != '#link']{
+	font-size: 30px;
+}
